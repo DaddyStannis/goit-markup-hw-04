@@ -75,11 +75,13 @@
 
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-slogan">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button hero-button" type="button">
-            Замовити послугу
-          </button>
+        <div class="overlay">
+          <div class="container hero-container">
+            <h1 class="hero-slogan">Ефективні рішення для вашого бізнесу</h1>
+            <button class="button hero-button" type="button">
+              Замовити послугу
+            </button>
+          </div>
         </div>
       </section>
 
@@ -478,23 +480,84 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <a class="footer-logo link" href="index.html" rel="html"
-          ><span class="footer-logo-left">Web</span
-          ><span class="footer-logo-right">Studio</span></a
-        >
+        <div class="footer-links">
+          <a class="footer-logo link" href="index.html" rel="html"
+            ><span class="footer-logo-left">Web</span
+            ><span class="footer-logo-right">Studio</span></a
+          >
 
-        <address class="footer-address">
-          <div class="footer-contacts">
-            <p class="footer-address-str">м. Київ, пр-т Лесі Українки, 26</p>
+          <address class="footer-address">
+            <div class="footer-contacts">
+              <p class="footer-address-str">м. Київ, пр-т Лесі Українки, 26</p>
 
-            <a class="footer-address-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="footer-address-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </div>
-        </address>
+              <a
+                class="footer-address-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="footer-address-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </div>
+          </address>
+        </div>
+        <div class="footer-networks">
+          <h4 class="footer-subtitle">приєднуйтесь</h4>
+          <ul class="network-list">
+            <li class="network-item">
+              <a
+                class="network-link footer-network-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="network-icon" width="20" height="20">
+                  <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network-item">
+              <a
+                class="network-link footer-network-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
+                <svg class="network-icon" width="20" height="20">
+                  <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network-item">
+              <a
+                class="network-link footer-network-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="network-icon" width="20" height="20">
+                  <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network-item">
+              <a
+                class="network-link footer-network-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <svg class="network-icon" width="20" height="20">
+                  <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

@@ -155,13 +155,21 @@ header {
 }
 
 .hero {
-  background: var(--bg-color);
+  background-color: var(--bg-color);
+}
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero-bg.jpg");
-
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -449,6 +457,8 @@ header {
 }
 
 .footer-container {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -471,10 +481,12 @@ header {
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  gap: 9px;
 }
 
 .footer-address {
   margin-top: 20px;
+  display: flex;
 
   font-style: normal;
   font-size: 14px;
@@ -482,13 +494,35 @@ header {
 }
 
 .footer-address-str {
-  margin-top: 9px;
-
   color: var(--text-color-on-dark-bg);
 }
 
 .footer-address-link {
-  margin-top: 9px;
-
   color: var(--addr-color);
+}
+
+.footer-networks {
+  width: 206px;
+  height: 80px;
+
+  margin-left: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16px / 14px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-color-on-dark-bg);
+}
+
+.footer-network-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color-on-dark-bg);
 }
