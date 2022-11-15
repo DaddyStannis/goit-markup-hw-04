@@ -21,47 +21,56 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a class="header-logo link" href="index.html" rel="html">
-          <span class="header-logo-left">Web</span
-          ><span class="header-logo-right">Studio</span>
-        </a>
+        <div class="header-wrapper">
+          <a class="header-logo link" href="index.html" rel="html">
+            <span class="header-logo-left">Web</span
+            ><span class="header-logo-right">Studio</span>
+          </a>
 
-        <nav class="header-menu">
-          <ul class="header-items">
-            <li>
-              <a
-                class="item link menu-item header-link"
-                href="index.html"
-                rel="html"
-                >Студія</a
-              >
-            </li>
-            <li>
-              <a
-                class="item link active header-link"
-                href="portfolio.html"
-                rel="html"
-                >Портфоліо</a
-              >
-            </li>
-            <li>
-              <a class="item link menu-item header-link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="header-menu">
+            <ul class="header-items">
+              <li class="header-item">
+                <a
+                  class="item menu-item header-link"
+                  href="index.html"
+                  rel="html"
+                  >Студія</a
+                >
+              </li>
+              <li>
+                <a
+                  class="item active header-link"
+                  href="portfolio.html"
+                  rel="html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="item menu-item header-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <ul class="header-contacts">
-          <li>
+          <li class="header-contact">
             <a
-              class="item link contact header-link"
+              class="item contact header-link"
               href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
             >
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/svg/sprite.svg#icon-envelope"></use>
+              </svg>
+              <span class="contact-info">info@devstudio.com</span>
+            </a>
           </li>
-          <li>
-            <a class="item link contact header-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+          <li class="header-contact">
+            <a class="item contact header-link" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/svg/sprite.svg#icon-telephone"></use>
+              </svg>
+              <span class="contact-info">+38 096 111 11 11</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -92,7 +101,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-1.jpg"
+                  src="images/projects/технокряк.jpg"
                   alt="Макбук з відкритим веб-сайтом"
                   width="370"
                   height="294"
@@ -106,7 +115,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-2.jpg"
+                  src="images/projects/постер-new-orlean-vs-golden-star.jpg"
                   alt="Постер New Orlean vs Golden Star"
                   width="370"
                   height="294"
@@ -122,7 +131,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-3.jpg"
+                  src="images/projects/ресторан-seafood.jpg"
                   alt="Логотип ресторану seafood"
                   width="370"
                   height="294"
@@ -136,7 +145,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-4.jpg"
+                  src="images/projects/проєкт-prime.jpg"
                   alt="Чорні накладні навушники"
                   width="370"
                   height="294"
@@ -150,7 +159,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-5.jpg"
+                  src="images/projects/проєкт-boxes.jpg"
                   alt="Біла велика та коричнева маленька коробка"
                   width="370"
                   height="294"
@@ -164,7 +173,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-6.jpg"
+                  src="images/projects/inspiration-has no-borders.jpg"
                   alt="Аймак"
                   width="370"
                   height="294"
@@ -178,7 +187,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-7.jpg"
+                  src="images/projects/видання-limited-edition.jpg"
                   alt="Відкрита книга"
                   width="370"
                   height="294"
@@ -192,7 +201,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-8.jpg"
+                  src="images/projects/проєкт-lab.jpg"
                   alt="Біла бірка"
                   width="370"
                   height="294"
@@ -206,7 +215,7 @@
             <li class="portfolio-item">
               <a class="link" href="">
                 <img
-                  src="images/project-9.jpg"
+                  src="images/projects/growing-business.jpg"
                   alt="Чоловік друкує на макбуці"
                   width="370"
                   height="294"
