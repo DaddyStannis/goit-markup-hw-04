@@ -7,6 +7,8 @@
   --addr-color: rgba(255, 255, 255, 0.6);
   --portfolio-bg-color: #f5f4fa;
   --svg-default-color: #afb1b8;
+
+  --transitions: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -94,11 +96,6 @@ header {
   align-items: baseline;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--interactive-color);
-}
-
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -123,11 +120,15 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
 
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
 }
 
 .header-link.active {
   color: var(--interactive-color);
+}
+
+.header-link.contact {
+  color: var(--secondary-text-color);
 }
 
 .contact-icon {
@@ -141,10 +142,6 @@ header {
 
 .menu {
   display: flex;
-}
-
-.menu-item {
-  color: var(--main-text-color);
 }
 
 .item {
@@ -356,22 +353,26 @@ header {
   background-color: var(--interactive-color);
 }
 
-.customers-list {
+.customer-list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
   /* flex-wrap: wrap; */
 }
 
-.customers-item {
-  flex-basis: calc((100% - 5 * 30px) / 6);
+.customer-item {
+  width: 170px;
+  height: 92px;
 }
 
-.customers-link {
-  display: block;
+.customer-link {
+  /* display: block; */
   width: 100%;
   height: 100%;
-  padding: 16px 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: var(--svg-default-color);
 
@@ -379,14 +380,14 @@ header {
   border-radius: 4px;
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customer-link:hover,
+.customer-link:focus {
   color: var(--interactive-color);
 
   border: 1px solid var(--interactive-color);
 }
 
-.customers-icon {
+.customer-icon {
   fill: currentColor;
 }
 
@@ -429,7 +430,12 @@ header {
   color: var(--text-color-on-dark-bg);
 }
 
-.portfolio-item:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -458,14 +464,15 @@ header {
 }
 
 .footer {
-  background: var(--bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-color);
 }
 
 .footer-container {
   display: flex;
   align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -504,6 +511,10 @@ header {
 
 .footer-address-link {
   color: var(--addr-color);
+}
+
+.footer-address-link:hover {
+  color: var(--interactive-color);
 }
 
 .footer-networks {
